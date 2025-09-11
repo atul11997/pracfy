@@ -1,0 +1,371 @@
+  .hero-section {
+            position: relative;
+            background: linear-gradient(180deg,
+                    white 30%,
+                    #b2edce 50%,
+                    #b2edce 80%,
+                    white 100%);
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-bg-svg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-section>.container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section h1 {
+            font-weight: 700;
+        }
+
+        .rating-icon {
+            max-height: 30px;
+        }
+
+        .rating-text {
+            font-weight: 600;
+        }
+
+        .ratings .col {
+            padding: 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-item {
+            padding: 1rem;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            color: #000;
+            font-weight: 800;
+            padding: 0.5rem 1rem;
+        }
+
+        .btn-success {
+            background-color: #018e3f;
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #016f32;
+        }
+
+        .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+        .display-4 {
+            font-size: 50px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .display-5 {
+            font-size: 82px;
+            line-height: 92px;
+            text-align: center;
+        }
+        .pricing-table {
+            margin-top: 50px;
+        }
+        
+        
+        .discount-banner {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .discount-timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .time-slot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .time-part {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .date-part-info {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        
+        .pricing-card {
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            /* transition: transform 0.3s ease; */
+            height: 400px;
+        }
+        .pricing-card.expanded {
+        /* Only style changes allowed, no transition on height */
+        border-color: #007bff;
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+        }
+
+        .accordion-collapse {
+            transition: none !important; /* Optional, to disable any conflicting transition */
+        }
+        
+        /* .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+         */
+        .pricing-card.recommended {
+            border: 2px solid #018e3f;
+            position: relative;
+        }
+        
+        .recommended-badge {
+            background-color: #018e3f;
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .price-box {
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #6c757d;
+            font-size: 1.2rem;
+        }
+        
+        .per-month {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .plan-description {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .features-list {
+            padding: 0 20px 20px;
+        }
+        
+        .feature-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .feature-item.disabled {
+            color: #adb5bd;
+        }
+        
+        .feature-name {
+            flex-grow: 1;
+        }
+        
+        .feature-icon {
+            color: #6c757d;
+            margin-left: 10px;
+        }
+        
+        .btn-choose {
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .pricing-card.expanded {
+            height: auto;
+        }
+  .pricing-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .pricing-header {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .plan-name {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .price-box {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+
+  .per-month {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .plan-description {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1; /* This makes descriptions take equal space */
+    min-height: 60px; /* Adjust based on your longest description */
+  }
+
+  .btn-choose {
+    width: 100%;
+    padding: 10px;
+    margin-top: auto; /* This pushes button to bottom */
+  }
+
+   .custom-footer {
+            width: 100%;
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 65px 0; /* Matching your footermargin="65" */
+            position: relative;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            max-width: 1905px; /* Matching your original width */
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .footer-column {
+            padding: 0 15px;
+        }
+        
+        .footer-heading {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #6c757d;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #0d6efd; /* Bootstrap primary color */
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #dee2e6;
+            padding-top: 20px;
+            margin-top: 30px;
+            text-align: center;
+            color: #6c757d;
+        }
+        
+        /* Background overlay like your original */
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.03);
+            z-index: -1;
+        }
+
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+    .display-5 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+/* Small devices (phones, 576px and down) */
+@media screen and (max-width: 576px) {
+    .display-5 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+/* Extra small devices (less than 480px) */
+@media screen and (max-width: 480px) {
+    .display-5 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
